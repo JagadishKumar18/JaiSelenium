@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="NewToursApplciation" tests="12" started="12" failures="0" errors="0" ignored="0">
+  <testsuite name="StepDefinition.TestRunner" time="39.16">
+    <testsuite name="Feature: NewTours Application loginTest" time="39.16">
+      <testsuite name="Scenario Outline: Validating login functionality of newtours application" time="39.16">
+        <testsuite name="Examples:" time="39.16">
+          <testsuite name="| tutorial | tutorial |" time="6.178">
+            <testcase name="Given Open firefoxbrowser and navigate to newtours application" classname="| tutorial | tutorial |" time="5.345"/>
+            <testcase name="When Enter Valid &quot;tutorial&quot; and &quot;tutorial&quot; and Click on Login button" classname="| tutorial | tutorial |" time="0.832"/>
+            <testcase name="Then User should be able to succcessfully login and Close the application" classname="| tutorial | tutorial |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| admin | mercury |" time="6.078">
+            <testcase name="Given Open firefoxbrowser and navigate to newtours application" classname="| admin | mercury |" time="5.344"/>
+            <testcase name="When Enter Valid &quot;admin&quot; and &quot;mercury&quot; and Click on Login button" classname="| admin | mercury |" time="0.734"/>
+            <testcase name="Then User should be able to succcessfully login and Close the application" classname="| admin | mercury |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| tutorial | tutorial |" time="6.138">
+            <testcase name="Given Open firefoxbrowser and navigate to newtours application" classname="| tutorial | tutorial |" time="5.31"/>
+            <testcase name="When Enter Valid &quot;tutorial&quot; and &quot;tutorial&quot; and Click on Login button" classname="| tutorial | tutorial |" time="0.828"/>
+            <testcase name="Then User should be able to succcessfully login and Close the application" classname="| tutorial | tutorial |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| admin | mercury |" time="6.062">
+            <testcase name="Given Open firefoxbrowser and navigate to newtours application" classname="| admin | mercury |" time="5.331"/>
+            <testcase name="When Enter Valid &quot;admin&quot; and &quot;mercury&quot; and Click on Login button" classname="| admin | mercury |" time="0.73"/>
+            <testcase name="Then User should be able to succcessfully login and Close the application" classname="| admin | mercury |" time="0.001"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="NewToursApplciation" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="StepDefinition.TestRunner" time="0.712">
+    <testsuite name="Feature: NewTours Application loginTest" time="0.712">
+      <testsuite name="Scenario: Validating login functionality of newtours application" time="0.712">
+        <testcase name="Given Open firefoxbrowser and navigate to newtours application" classname="Scenario: Validating login functionality of newtours application" time="0.153"/>
+        <testcase name="When Enter Valid User Name and Pssword and Click on Login button" classname="Scenario: Validating login functionality of newtours application" time="0.555"/>
+        <testcase name="Then User should be able to succcessfully login and Close the application" classname="Scenario: Validating login functionality of newtours application" time="0.001"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

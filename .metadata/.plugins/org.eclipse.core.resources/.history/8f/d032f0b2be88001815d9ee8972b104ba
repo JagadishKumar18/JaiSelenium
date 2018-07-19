@@ -1,0 +1,78 @@
+package newToursAppl;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Sleeper;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class LogInTest 
+{
+
+	//FirefoxDriver driver;
+	
+//	ChromeDriver driver;
+	
+	EdgeDriver driver;
+
+@Given("^Open firefoxbrowser and navigate to newtours application$")
+
+public void Open_firefoxbrowser_and_navigate_to_newtours_application() 
+		 {
+    
+	//System.setProperty("webdriver.gecko.driver", "C:\\Users\\rrjag\\OneDrive\\Desktop\\JaiSelenium\\NewToursApplciation\\DriverFiles\\geckodriver.exe");
+		//driver = new FirefoxDriver();
+	
+	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\rrjag\\OneDrive\\Desktop\\JaiSelenium\\NewToursApplciation\\DriverFiles\\chromedriver.exe");
+	
+	//driver = new ChromeDriver();
+	
+	System.setProperty("webdriver.edge.driver", "C:\\Users\\rrjag\\OneDrive\\Desktop\\JaiSelenium\\NewToursApplciation\\DriverFiles\\MicrosoftWebDriver.exe");
+	
+	driver = new EdgeDriver();
+	
+		driver.get("http://newtours.demoaut.com");
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		 }
+
+@When("^Enter Valid User Name and Pssword and Click on Login button$")
+public void Enter_Valid_User_Name_and_Pssword_and_Click_on_Login_button() throws Throwable
+{
+	driver.findElement(By.name("userName")).sendKeys("tutorial");
+	driver.findElement(By.name("password")).sendKeys("tutorial");
+	driver.findElement(By.name("login")).click();
+	
+	Sleeper.SYSTEM_SLEEPER(10);
+}
+
+@Then("^User should be able to succcessfully login and Close the application$")
+public void User_should_be_able_to_succcessfully_login_and_Close_the_application() throws Throwable 
+{
+
+	String expected_Title = "Find";
+	String acutal_Title=driver.getTitle();
+	
+	if(acutal_Title.contains(expected_Title))
+	{
+		System.out.println("Title Matched -- PASS");
+	}
+	else
+	{
+		System.out.println("Titme not matched - FAIL");
+	}
+	
+	driver.close();
+}
+	
+	
+	
+}

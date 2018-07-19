@@ -1,0 +1,5 @@
+Feature: NewTours Application loginTest
+Scenario: Validating login functionality of newtours application
+Given Open firefoxbrowser and navigate to newtours application
+When Enter Valid "<User Name>" and "<Pssword>" and Click on Login button
+Then User should be able to succcessfully login and Close the application
